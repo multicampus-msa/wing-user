@@ -3,11 +3,11 @@ node {
          checkout scm
      }
      stage('chmod') {
-         sh 'chmod +x gradlew'
+         sh 'chmod +x server/gradlew'
      }
      stage('Gradle Build') {
-         sh './gradlew bootjar'
-         sh 'cp /var/lib/jenkins/workspace/wing-user/build/libs/*.jar ./'
+         sh 'server/gradlew bootjar'
+         sh 'cp /var/lib/jenkins/workspace/wing-user/server/build/libs/*.jar ./'
      }
      stage('Build & Push image') {
           docker.withRegistry('https://registry.hub.docker.com', 'midaslmg94-docker') {
