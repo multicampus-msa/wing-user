@@ -15,7 +15,7 @@ import java.util.List;
 @Api(tags = "User Controller")
 @AllArgsConstructor
 @RequestMapping(value = "/api/user")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://wingproject.shop:8002")
 @RestController
 public class UserController {
     private final UserService userService;
