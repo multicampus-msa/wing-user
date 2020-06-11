@@ -7,7 +7,7 @@ node {
      }
      stage('Gradle Build') {
          sh 'server/gradlew bootjar'
-         sh 'cp /var/lib/jenkins/workspace/wing-user/server/build/libs/*.jar ./'
+         sh 'cp /var/lib/jenkins/workspace/wing-user/server/build/libs/*.jar server/*.jar'
      }
      stage('Build & Push image') {
           docker.withRegistry('https://registry.hub.docker.com', 'midaslmg94-docker') {
