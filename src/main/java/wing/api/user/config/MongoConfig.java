@@ -10,7 +10,8 @@ import org.springframework.data.mongodb.core.convert.DefaultDbRefResolver;
 import org.springframework.data.mongodb.core.convert.DefaultMongoTypeMapper;
 import org.springframework.data.mongodb.core.convert.MappingMongoConverter;
 import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
-
+// mongo를 사용하지 않으므로 안쓰는 코드
+/*
 @Configuration
 @RequiredArgsConstructor
 public class MongoConfig{
@@ -28,4 +29,4 @@ public class MongoConfig{
     public MongoTemplate mongoTemplate(){
         return new MongoTemplate(mongoDbFactory, mappingMongoConverter());
     }
-}
+}*/

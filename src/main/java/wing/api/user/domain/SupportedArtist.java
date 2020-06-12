@@ -1,5 +1,6 @@
 package wing.api.user.domain;
-
+// mongo를 사용하지 않으므로 안쓰는 코드
+ /*
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,3 +14,4 @@ public class SupportedArtist {
 //    private String artistName;
 //    private String useName;
 }
+*/

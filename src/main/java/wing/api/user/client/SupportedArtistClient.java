@@ -5,10 +5,11 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import wing.api.user.domain.SupportedArtist;
+//import wing.api.user.domain.SupportedArtist;
 
 import java.util.List;
-
+// mongo를 사용하지 않으므로 안쓰는 코드
+/*
 @Component
 public class SupportedArtistClient {
     public List<SupportedArtist> getSupportList(String userId){
@@ -24,4 +25,4 @@ public class SupportedArtistClient {
         );
         return restExchange.getBody();
     }
-}
+}*/

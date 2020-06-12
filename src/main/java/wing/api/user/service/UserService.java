@@ -3,8 +3,6 @@ package wing.api.user.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import wing.api.user.client.SupportedArtistClient;
-import wing.api.user.domain.SupportedArtist;
 import wing.api.user.domain.User;
 import wing.api.user.domain.UserRepository;
 import wing.api.user.web.dto.UserRequestDto;
@@ -15,7 +13,7 @@ import java.util.List;
 @Service
 public class UserService {
     private final UserRepository userRepository;
-    private final SupportedArtistClient supportedArtistClient;
+    //private final SupportedArtistClient supportedArtistClient;
 
     // 유저 등록 -> 리액트와 연동
     @Transactional

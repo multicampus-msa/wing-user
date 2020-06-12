@@ -5,11 +5,11 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import wing.api.user.domain.LikedMusic;
+//import wing.api.user.domain.LikedMusic;
 
 import java.util.List;
-
-@Component
+// mongo를 사용하지 않으므로 안쓰는 코드
+/*@Component
 public class LikedMusicClient {
     public List<LikedMusic> getLikedMusicList(String userId){
         RestTemplate restTemplate = new RestTemplate();
@@ -24,4 +24,4 @@ public class LikedMusicClient {
         );
         return restExchange.getBody();
     }
-}
+}*/
