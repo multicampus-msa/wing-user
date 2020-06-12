@@ -20,7 +20,7 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
-    @ApiOperation(value = "유저 정보 등록하기")
+    @ApiOperation(value = "유저 정보 등록")
     @PostMapping("/save")
     public String saveUser(@RequestBody UserRequestDto userRequestDto){
         return userService.save(userRequestDto);
